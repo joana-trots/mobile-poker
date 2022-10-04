@@ -41,7 +41,7 @@ header{
         flex-direction: row;
         gap: 9px;
         align-items: flex-start;
-        margin-top: 25px;
+        margin: 25px 0 22.5px;
         .name{
             max-width: 127px;
             word-break: break-all;
@@ -63,6 +63,17 @@ header{
                 background-position: center;
                 background-repeat: no-repeat;
                 border-radius: 16px;
+                transition: all .5s;
+                cursor: pointer;
+                &:focus,
+                &:active{
+                    background-color: #43CE72;
+                }
+                &.hidden{
+                    width: 120px;
+                    background-color: #0E8938;
+                    transition: all .5s;
+                }
             }
             .sum{
                 width: 120px;
@@ -71,6 +82,9 @@ header{
                 background: #373352;
                 border-radius: 24px;
                 padding: 5.5px 8px;
+                &.hidden{
+                    display: none;
+                }
                 p{
                     float: right;
                 }
@@ -164,7 +178,7 @@ header{
           }
     }
     .loading{
-        margin: 22.5px 0 6px;
+        margin: 0s 0 6px;
         width: 100%;
         &__pr-bar{
             height: 4px;
@@ -172,7 +186,7 @@ header{
             border-radius: 4px;
             width: 100%;
             &--fill{
-                width: 70%;
+                width: 0%;
                 height: 4px;
                 border-radius: 4px;
                 background-color: #00D749;
