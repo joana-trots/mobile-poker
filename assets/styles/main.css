@@ -259,6 +259,9 @@ section .tournament.cancelled a {
   background-color: rgba(255, 255, 255, 0.15);
   color: #FFFFFF4D;
 }
+section .tournament.cancelled .tournament__label-state {
+  background-color: #5E5A79;
+}
 section .tournament__label-state {
   background-color: #00BB40;
   height: 78px;
@@ -285,7 +288,8 @@ section .tournament__info .tags {
   gap: 4px;
 }
 section .tournament__info .tags .main-tag {
-  border: 1px solid #ffffff;
+  color: #FFFFFFB2;
+  border: 1px solid #FFFFFFB2;
   border-radius: 2px;
   padding: 3px;
   height: 16px;
