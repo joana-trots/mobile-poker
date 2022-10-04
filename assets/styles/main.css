@@ -76,8 +76,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  width: 100vw;
+  padding: 40px;
 }
 main {
   background-color: #211F2D;
@@ -109,6 +109,10 @@ header .player-info .name {
 }
 header .player-info .name .rating {
   float: right;
+}
+header .player-info .avatar {
+  width: 34px;
+  height: 34px;
 }
 header .player-info .balance .eye-btn {
   position: absolute;
@@ -143,8 +147,8 @@ header .spinner .lds-default {
 }
 header .spinner .lds-default div {
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background: #00D749;
   border-radius: 50%;
   animation: lds-default 1.2s linear infinite;
@@ -210,11 +214,10 @@ header .spinner .lds-default div:nth-child(12) {
   left: 62px;
 }
 @keyframes lds-default {
-  0%,
-  100% {
+  0% {
     opacity: 0;
   }
-  50% {
+  100% {
     opacity: 1;
   }
 }
@@ -261,6 +264,9 @@ section .tournament.cancelled a {
 }
 section .tournament.cancelled .tournament__label-state {
   background-color: #5E5A79;
+}
+section .tournament.custom {
+  background-color: #443E73;
 }
 section .tournament__label-state {
   background-color: #00BB40;
@@ -340,6 +346,7 @@ section .tournament__info .tournament__footer {
 }
 section .tournament__info .tournament__footer div {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 6px;
 }
