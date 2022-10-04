@@ -87,8 +87,11 @@ section{
         background-color: #373352;
         border-radius: 4px;
         margin-top: 10px;
-        .active{
+        &.active{
             background-color: #2F2B47;
+            .tournament__title{
+                color: #86FF8B;
+            }
         }
         &.registering{
             a{
@@ -136,11 +139,9 @@ section{
                 }
                 
             }
-            &__title{
-                p{
-                    font-size: 12px;
-                    font-weight: 600;
-                }
+            .tournament__title{
+                font-size: 12px;
+                font-weight: 600;
             }
             a{
                 width: 80px;

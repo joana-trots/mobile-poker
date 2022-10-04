@@ -144,8 +144,11 @@ section .tournament {
   border-radius: 4px;
   margin-top: 10px;
 }
-section .tournament .active {
+section .tournament.active {
   background-color: #2F2B47;
+}
+section .tournament.active .tournament__title {
+  color: #86FF8B;
 }
 section .tournament.registering a {
   background-color: #00BB40;
@@ -187,7 +190,7 @@ section .tournament__info .tags .main-tag {
   line-height: 10px;
   text-transform: uppercase;
 }
-section .tournament__info__title p {
+section .tournament__info .tournament__title {
   font-size: 12px;
   font-weight: 600;
 }
