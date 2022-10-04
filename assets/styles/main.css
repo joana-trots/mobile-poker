@@ -73,6 +73,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 main {
   background-color: #211F2D;
@@ -137,6 +142,7 @@ section .tournament {
   padding: 8px 8px 9px 0;
   background-color: #373352;
   border-radius: 4px;
+  margin-top: 10px;
 }
 section .tournament__label-state {
   background-color: #00BB40;
