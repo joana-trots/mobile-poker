@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание</title>
-    <link rel="stylesheet" href="./assets/styles/main.css?cachf">
+    <link rel="stylesheet" href="./assets/styles/main.css">
   </head>
   <body>
     <main>
@@ -12,18 +12,9 @@
         <h1>Poker</h1>
         <div class="spinner">
           <div class="lds-default">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
           </div>
         </div>
         <div class="player-info">
@@ -35,7 +26,7 @@
             <img src="assets/images/avatar.png" class="avatar" alt="avatar" />
           </div>
           <div class="balance">
-            <div class="eye-btn" title="hide"></div>
+            <div class="eye-btn"></div>
             <div class="sum"><p>$100,500.00</p></div>
           </div>
         </div>
@@ -43,7 +34,7 @@
           <div class="loading__pr-bar">
             <div class="loading__pr-bar--fill"></div>
           </div>
-          <p>Loading 70%</p>
+          <p class="loading__value"></p>
         </div>
       </header>
 
@@ -204,5 +195,30 @@
         </div>
       </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(document).ready(function(){
+        $('.eye-btn').click(function(){
+          $('.eye-btn').toggleClass('hidden');
+          $('.sum').toggleClass('hidden');
+        });
+        let width = 0;
+        let id = setInterval(frame, 50);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            $('.spinner').css('display', 'none');
+            $('.loading').css('display', 'none');
+          } else {
+            width++; 
+            $('.loading__pr-bar--fill').css('width', width + '%'); 
+            $('.loading__value').html('Loading ' + width  + '%');
+          }
+        }
+      });
+      </script>
+      <script>
+
+        </script>
   </body>
 </html>

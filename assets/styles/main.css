@@ -101,7 +101,7 @@ header .player-info {
   flex-direction: row;
   gap: 9px;
   align-items: flex-start;
-  margin-top: 25px;
+  margin: 25px 0 22.5px;
 }
 header .player-info .name {
   max-width: 127px;
@@ -123,6 +123,17 @@ header .player-info .balance .eye-btn {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+header .player-info .balance .eye-btn:focus,
+header .player-info .balance .eye-btn:active {
+  background-color: #43CE72;
+}
+header .player-info .balance .eye-btn.hidden {
+  width: 120px;
+  background-color: #0E8938;
+  transition: all 0.5s;
 }
 header .player-info .balance .sum {
   width: 120px;
@@ -131,6 +142,9 @@ header .player-info .balance .sum {
   background: #373352;
   border-radius: 24px;
   padding: 5.5px 8px;
+}
+header .player-info .balance .sum.hidden {
+  display: none;
 }
 header .player-info .balance .sum p {
   float: right;
@@ -222,7 +236,7 @@ header .spinner .lds-default div:nth-child(12) {
   }
 }
 header .loading {
-  margin: 22.5px 0 6px;
+  margin: 0s 0 6px;
   width: 100%;
 }
 header .loading__pr-bar {
@@ -232,7 +246,7 @@ header .loading__pr-bar {
   width: 100%;
 }
 header .loading__pr-bar--fill {
-  width: 70%;
+  width: 0%;
   height: 4px;
   border-radius: 4px;
   background-color: #00D749;
