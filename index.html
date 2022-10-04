@@ -10,7 +10,22 @@
     <main>
       <header>
         <h1>Poker</h1>
-        <div class="spinner"></div>
+        <div class="spinner">
+          <div class="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
         <div class="player-info">
           <div class="name">
             <p>LongUserName</p>
@@ -24,11 +39,16 @@
             <div class="sum"><p>$100,500.00</p></div>
           </div>
         </div>
-        <div class="pr-bar">
-          <input type="range" value="75">
+        <div class="loading">
+          <div class="loading__pr-bar">
+            <div class="loading__pr-bar--fill"></div>
+          </div>
           <p>Loading 70%</p>
         </div>
       </header>
+
+      <!-- tournaments -->
+
       <section class="tournaments">
         <div class="tournament registering">
           <div class="tournament__label-state"><span>Registering</span></div>
@@ -65,12 +85,64 @@
                 <div class="tags">
                   <img src="assets/images/icons/pin.svg" class="pin" alt="pin icon" />
                   <div class="main-tag">
-                    NL 2-7 Triple Draw
+                    NL Holdem
                   </div>
                 </div>
                 <div class="tournament__title"><p>OFC Pineapple</p></div>
               </div>
               <a href="#" title="Join table">Join table</a>
+            </div>
+            <div class="tournament__footer">
+              <div class="datetime d-flex-row">
+                12:00 pm, 28 July</div>
+              <div class="players d-flex-row">1/6</div>
+              <div class="tourney d-flex-row">100</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tournament cancelled">
+          <div class="tournament__label-state"><span>Cancelled</span></div>
+          
+          <div class="tournament__info">
+            <div class="d-flex-row">
+              <div class="d-flex-col">
+                <div class="tags">
+                  <img src="assets/images/icons/pin.svg" class="pin" alt="pin icon" />
+                  <div class="main-tag">NL OFC/pineapple prg</div>
+                  <div class="small-tag time"></div>
+                  <div class="small-tag freeroll"></div>
+                </div>
+                <div class="tournament__title"><p>Hourly Freeroll</p></div>
+              </div>
+              <a href="#" title="Join table">Cancelled</a>
+            </div>
+            <div class="tournament__footer">
+              <div class="datetime">
+                12:00 pm, 28 July</div>
+              <div class="players">1/10 000</div>
+              <div class="tourney">1000</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tournament cancelled">
+          <div class="tournament__label-state"><span>Cancelled</span></div>
+          
+          <div class="tournament__info">
+            <div class="d-flex-row">
+              <div class="d-flex-col">
+                <div class="tags">
+                  <img src="assets/images/icons/pin.svg" class="pin" alt="pin icon" />
+                  <div class="main-tag">
+                    NL 2-7 Triple Draw
+                  </div>
+                </div>
+                <div class="tournament__title"><p>OFC Pineapple</p></div>
+              </div>
+              <a href="#" title="Join table">Cancelled</a>
             </div>
             <div class="tournament__footer">
               <div class="datetime d-flex-row">
@@ -96,59 +168,7 @@
                 </div>
                 <div class="tournament__title"><p>OFC Pineapple</p></div>
               </div>
-              <a href="#" title="Join table">Join table</a>
-            </div>
-            <div class="tournament__footer">
-              <div class="datetime d-flex-row">
-                12:00 pm, 28 July</div>
-              <div class="players d-flex-row">1000/1000</div>
-              <div class="tourney d-flex-row">1000000</div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="tournament cancelled">
-          <div class="tournament__label-state"><span>Registering</span></div>
-          
-          <div class="tournament__info">
-            <div class="d-flex-row">
-              <div class="d-flex-col">
-                <div class="tags">
-                  <img src="assets/images/icons/pin.svg" class="pin" alt="pin icon" />
-                  <div class="main-tag">
-                    NL 2-7 Triple Draw
-                  </div>
-                </div>
-                <div class="tournament__title"><p>OFC Pineapple</p></div>
-              </div>
-              <a href="#" title="Join table">Join table</a>
-            </div>
-            <div class="tournament__footer">
-              <div class="datetime d-flex-row">
-                12:00 pm, 28 July</div>
-              <div class="players d-flex-row">1000/1000</div>
-              <div class="tourney d-flex-row">1000000</div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="tournament cancelled">
-          <div class="tournament__label-state"><span>Registering</span></div>
-          
-          <div class="tournament__info">
-            <div class="d-flex-row">
-              <div class="d-flex-col">
-                <div class="tags">
-                  <img src="assets/images/icons/pin.svg" class="pin" alt="pin icon" />
-                  <div class="main-tag">
-                    NL 2-7 Triple Draw
-                  </div>
-                </div>
-                <div class="tournament__title"><p>OFC Pineapple</p></div>
-              </div>
-              <a href="#" title="Join table">Join table</a>
+              <a href="#" title="Join table">Cancelled</a>
             </div>
             <div class="tournament__footer">
               <div class="datetime d-flex-row">
